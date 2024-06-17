@@ -20,3 +20,37 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    outline: 1px solid red;
+    height: 2.5em;
+}
+
+/* Sections */
+section {
+    flex: auto;
+}
+
+
+#content {
+    outline: 1px solid yellow;
+}
+
+/* Footer */
+
+footer {
+    outline: 1px solid blue;
+    height: 2.5em;
+}
