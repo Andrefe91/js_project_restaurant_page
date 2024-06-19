@@ -30,13 +30,25 @@ time, mark, audio, video {
     --color_action: #b34d00;
     --complementary: #007DDC;
     --text_color: rgb(226, 226, 226);
+
+    --small_size: 320px;
+    --tablet_size: 768px;
+    --laptop_size: 992px;
+    --desktop_size: 1200px;
+
+    --padding_s: 0.5em;
+    --padding_x: 1em;
+    --padding_xx: 1.5em;
+    --padding_L: 2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 
-header * {
-    /* outline: 1px solid red; */
-
-}
 
 h1 {
     font-size: 2em;
@@ -61,8 +73,11 @@ body {
 header {
     display: flex;
     background-color: var(--color_top);
-    height: 4em;
-    padding-left: 0.5em;
+    height: 3em;
+    padding: 0.5em;
+
+    /* padding-bottom: 1em; */
+    /* padding-left: 0.5em; */
 }
 
 nav {
@@ -111,7 +126,6 @@ section {
     flex: auto;
     align-items: center;
 
-    margin: 0 2em 0 2em;
 }
 
 .home {
@@ -139,13 +153,13 @@ footer {
     justify-content: flex-end;
     background-color: var(--color_bottom);
     padding: 0.5em;
-    color: var(--text_color);
 }
 
 .heart {
     /* Modify size here: */
     --size: 20px;
 
+    margin: 7px 5px 0 5px;
     position: relative;
     width: var(--size);
     height: calc(var(--size) * 0.3);
@@ -189,4 +203,42 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.padding_bottom_s {
+    padding-bottom: var(--padding_s);
+}
+
+.padding_bottom_x {
+    padding-bottom: var(--padding_x);
+}
+
+.padding_left_s {
+    padding-left: var(--padding_s);
+}
+
+.flex_hor {
+    display: flex;
+}
+
+
+/* Media Queries */
+
+@media (width > 1250px) {
+    #content {
+        margin: 0 15em 0 15em;
+    }
+}
+
+@media (width < 1250px) {
+    #content {
+        margin: 0 8em 0 8em;
+    }
+}
+
+
+@media (width < 720px) {
+    #content {
+        margin: 0 1em 0 1em;
+    }
 }
