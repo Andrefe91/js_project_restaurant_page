@@ -18,8 +18,12 @@ module.exports = {
                    'style-loader',
                     'css-loader'
                 ]
-            }
-        ]
+            },
+            {
+                test: /\.(jpg|png|jpeg)$/i,
+                type: 'asset/resource',
+            },
+        ],
     },
     devServer: {
         static: "./dist",
