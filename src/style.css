@@ -301,6 +301,9 @@ a {
     }
 }
 
-@media (width < 698) {
+@media (width < 360px) {
+    body {
+        font-size: 15px;
+    }
 
 }
