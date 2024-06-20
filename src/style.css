@@ -132,7 +132,7 @@ section {
 }
 
 .location img {
-    height: 500px;
+    max-width: calc(min(700px, 100%));
 }
 
 .items {
